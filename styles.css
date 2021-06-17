@@ -31,7 +31,6 @@
   opacity: 0.7;
 }
 .comeback-text {
-  color: #f4f4f4;
   z-index: 2;
 }
 .countdown-text h1 {
@@ -92,15 +91,24 @@ p {
   font-size: 12px;
   letter-spacing: 2px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .countdown-timer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 50%;
+  }
+  .comeback-text {
+    height: 100vh;
   }
   .countdown-text h1 {
-    font-size: 2.3rem;
+    margin-top: 35px;
+    width: 100%;
+    font-size: 2rem;
     line-height: 3rem;
     text-align: center;
   }
