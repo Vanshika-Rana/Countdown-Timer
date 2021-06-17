@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+.comeback {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.comeback-bg video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.comeback-bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: black;
+  z-index: 1;
+  opacity: 0.7;
+}
+.comeback-text {
+  color: #f4f4f4;
+  z-index: 2;
+}
+.countdown-text h1 {
+  font-family: "Aclonica", sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #f85d23;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
+}
+
+.countdown-timer {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  border-radius: 1rem;
+  box-shadow: inset 0 0 15px rgba(20, 20, 20, 0),
+    inset 0 0 20px rgba(0, 0, 0, 0), 7px 7px 15px rgba(12, 12, 12, 0.15),
+    -7px -7px 20px rgba(0, 0, 0, 0.411), inset 0px 0px 4px rgba(20, 20, 20, 0.2);
+}
+.day,
+.hour,
+.minute,
+.second {
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.568);
+}
+p {
+  text-align: center;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.568);
+}
+.day-container {
+  margin: 5px;
+  color: #f29e25;
+}
+.hour-container {
+  margin: 5px;
+  color: #f85d23;
+}
+.minute-container {
+  margin: 5px;
+  color: #f29e25;
+}
+.second-container {
+  margin: 5px;
+  color: #f85d23;
+}
+.footer-block {
+  position: absolute;
+  top: 95%;
+  z-index: 2;
+  color: #fff;
+  font-weight: 100;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 1024px) {
+  .countdown-timer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .countdown-text h1 {
+    font-size: 2.3rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+  .footer-block {
+    font-size: 10px;
+    top: 95%;
+  }
+}
